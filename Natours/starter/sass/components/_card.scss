@@ -11,6 +11,7 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    overflow: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
@@ -60,6 +61,8 @@
     height: 24rem;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
     &--1 {
       background-image: linear-gradient(
@@ -157,6 +160,8 @@
 
   &__price-box {
     text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
   }
 
   &__price-only {
