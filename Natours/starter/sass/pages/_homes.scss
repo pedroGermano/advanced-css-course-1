@@ -27,7 +27,11 @@
   margin-top: -14rem;
 }
 
-.section-stories {
+section-stories {
+  position: relative;
   padding: 15rem 0;
-  background-color: $color-grey-light-1;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }

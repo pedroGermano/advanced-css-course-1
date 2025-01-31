@@ -147,6 +147,22 @@ body {
   margin-top: 10rem;
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -582,9 +598,14 @@ body {
   margin-top: -14rem;
 }
 
-.section-stories {
+section-stories {
+  position: relative;
   padding: 15rem 0;
-  background-color: #f7f7f7;
+}
+@media only screen and (max-width: 56.25em) {
+  section-stories {
+    padding: 10rem 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
